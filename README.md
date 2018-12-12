@@ -25,3 +25,14 @@ To learn more, visit:
 - [Ember Templates 1](https://guides.emberjs.com/release/templates/handlebars-basics/) (skip section on helpers)
 - [Ember Templates 2](https://guides.emberjs.com/release/templates/displaying-a-list-of-items/)
 - [Ember Component 1](https://guides.emberjs.com/release/components/the-component-lifecycle/) (`init` method)
+
+### #02 (Dec. 11th, 2018)
+- Use `ember g route` to create `members` and `officers` routes
+- Use `{{link-to}}` helper to navigate between routes
+- Understand the purpose of `{{outlet}}`
+- Use a route's `model` to display data
+- Use `ember install` to install addons (e.g. *ember-cli-sass*)
+
+To learn more, visit:
+- [Ember Route 1](https://guides.emberjs.com/release/routing/defining-your-routes/)
+- [Ember Route 2](https://guides.emberjs.com/release/routing/specifying-a-routes-model/)
