@@ -43,6 +43,14 @@ export default Route.extend({
                 isActive: true,
                 isOfficer: false,
             },
+            {
+                id: '5',
+                firstName: 'Pierce',
+                lastName: 'Morrill',
+                joinDate: '05/30/2017',
+                isActive: false,
+                isOfficer: false,
+            },
         ];
     },
 });

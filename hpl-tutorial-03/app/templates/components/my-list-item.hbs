@@ -48,7 +48,7 @@
         <button class="my-list__item__button" {{action "saveItem"}}>Save</button>
 
     {{else}}
-        <span class="my-list__item__attribute my-list__item__attribute-emphasis">{{person.firstName}} {{person.lastName}}</span>
+        <span class="my-list__item__attribute my-list__item__attribute-emphasis">{{person.firstName}} {{person.lastName}} {{if person.isOfficer "(Officer)"}}</span>
         <span class="my-list__item__attribute">Join Date: {{person.joinDate}}</span>
         <span class="my-list__item__attribute">Membership Active: {{if person.isActive "Yes" "No"}}</span>
 
