@@ -42,7 +42,7 @@ To learn more, visit:
 - Define a `model`'s attributes
 - Understand the purpose of an `adapter` and a `serializer`
 - Use *Mirage* and *Faker.js* to create mock data
-- Use *ember-test-selectors` to write integration and acceptance tests
+- Use *ember-test-selectors* to write integration and acceptance tests
 
 To learn more, visit:
 - [Ember Controller](https://guides.emberjs.com/release/controllers/)
