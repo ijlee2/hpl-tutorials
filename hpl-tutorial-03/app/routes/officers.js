@@ -2,6 +2,8 @@ import Route from '@ember/routing/route';
 
 export default Route.extend({
     model() {
+        return this.get('store').findAll('person');
+        /*
         return [
             {
                 id: '0',
@@ -52,5 +54,6 @@ export default Route.extend({
                 isOfficer: false,
             },
         ];
+        */
     },
 });
