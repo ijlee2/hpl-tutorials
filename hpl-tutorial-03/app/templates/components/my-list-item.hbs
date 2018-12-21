@@ -5,28 +5,28 @@
                 <legend>Edit Member</legend>
 
                 <div class="my-list__item__form__item">
-                    <label for="person_first_name">First Name</label>
+                    <label for={{concat uniqueId "_" "first_name"}}>First Name</label>
                     {{input
-                        id="person_first_name"
+                        id=(concat uniqueId "_" "first_name")
                         value=person.firstName
-                        placeholder="First Name"
+                        placeholder="Enter the first name"
                         autofocus=true
                     }}
                 </div>
 
                 <div class="my-list__item__form__item">
-                    <label for="person_last_name">Last Name</label>
+                    <label for={{concat uniqueId "_" "last_name"}}>Last Name</label>
                     {{input
-                        id="person_last_name"
+                        id=(concat uniqueId "_" "last_name")
                         value=person.lastName
-                        placeholder="First Name"
+                        placeholder="Enter the last name"
                     }}
                 </div>
 
                 <div class="my-list__item__form__item">
-                    <label for="person_is_active">Is the member active?</label>
+                    <label for={{concat uniqueId "_" "is_active"}}>Is the member active?</label>
                     {{input
-                        id="person_is_active"
+                        id=(concat uniqueId "_" "is_active")
                         type="checkbox"
                         checked=person.isActive
                         placeholder="Is the member active?"
@@ -34,9 +34,9 @@
                 </div>
 
                 <div class="my-list__item__form__item">
-                    <label for="person_is_officer">Is the member an officer?</label>
+                    <label for={{concat uniqueId "_" "is_officer"}}>Is the member an officer?</label>
                     {{input
-                        id="person_is_officer"
+                        id=(concat uniqueId "_" "is_officer")
                         type="checkbox"
                         checked=person.isOfficer
                         placeholder="Is the member an Officer?"

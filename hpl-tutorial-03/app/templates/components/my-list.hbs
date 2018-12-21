@@ -1,8 +1,8 @@
 <ul class="my-list">
-    {{#each people as |person|}}
+    {{#each people as |person index|}}
         {{my-list-item
             person=person
-            type=type
+            uniqueId=(concat "person" index)
         }}
     {{/each}}
 </ul>
