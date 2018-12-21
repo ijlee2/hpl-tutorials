@@ -1,5 +1,58 @@
 <li class="my-list__item">
-    <span class="my-list__item__attribute my-list__item__attribute-emphasis">{{person.firstName}} {{person.lastName}}</span>
-    <span class="my-list__item__attribute">Join Date: {{person.joinDate}}</span>
-    <span class="my-list__item__attribute">Membership Active: {{if person.isActive "Yes" "No"}}</span>
+    {{#if isEditing}}
+        <form class="my-list__item__form">
+            <fieldset>
+                <legend>Edit Member</legend>
+
+                <div class="my-list__item__form__item">
+                    <label for="person_first_name">First Name</label>
+                    {{input
+                        id="person_first_name"
+                        value=person.firstName
+                        placeholder="First Name"
+                        autofocus=true
+                    }}
+                </div>
+
+                <div class="my-list__item__form__item">
+                    <label for="person_last_name">Last Name</label>
+                    {{input
+                        id="person_last_name"
+                        value=person.lastName
+                        placeholder="First Name"
+                    }}
+                </div>
+
+                <div class="my-list__item__form__item">
+                    <label for="person_is_active">Is the member active?</label>
+                    {{input
+                        id="person_is_active"
+                        type="checkbox"
+                        checked=person.isActive
+                        placeholder="Is the member active?"
+                    }}
+                </div>
+
+                <div class="my-list__item__form__item">
+                    <label for="person_is_officer">Is the member an officer?</label>
+                    {{input
+                        id="person_is_officer"
+                        type="checkbox"
+                        checked=person.isOfficer
+                        placeholder="Is the member an Officer?"
+                    }}
+                </div>
+            </fieldset>
+        </form>
+
+        <button class="my-list__item__button" {{action "saveItem"}}>Save</button>
+
+    {{else}}
+        <span class="my-list__item__attribute my-list__item__attribute-emphasis">{{person.firstName}} {{person.lastName}}</span>
+        <span class="my-list__item__attribute">Join Date: {{person.joinDate}}</span>
+        <span class="my-list__item__attribute">Membership Active: {{if person.isActive "Yes" "No"}}</span>
+
+        <button class="my-list__item__button" {{action "editItem"}}>Edit</button>
+
+    {{/if}}
 </li>

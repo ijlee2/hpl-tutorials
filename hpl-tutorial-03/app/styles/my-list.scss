@@ -1,0 +1,59 @@
+.my-list {
+    border: 1px solid $light-gray-2;
+    padding: 0 8px;
+
+    &__item {
+        border-bottom: 1px solid $light-gray-2;
+        padding: 8px 0;
+        list-style-type: none;
+
+        display: flex;
+        flex-direction: column;
+
+        &__form {
+            padding: 4px 0;
+
+            legend {
+                font-size: 1.25rem;
+                font-weight: bold;
+                padding: 0 8px;
+            }
+
+            &__item {
+                padding: 4px 0;
+
+                label {
+                    margin-right: 8px;
+                }
+
+                input {
+                    font-family: $default-font-family;
+                    font-size: $default-font-size;
+                    letter-spacing: $default-letter-spacing;
+                }
+            }
+        }
+
+        &__attribute {
+            padding: 4px 0;
+
+            &-emphasis {
+                font-weight: bold;
+            }
+        }
+
+        &__button {
+            width: 120px;
+            margin-top: 8px;
+            padding: 4px 8px;
+
+            font-family: $default-font-family;
+            font-size: $default-font-size;
+            letter-spacing: $default-letter-spacing;
+        }
+
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+}

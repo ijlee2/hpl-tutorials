@@ -1,0 +1,13 @@
+.my-nav {
+    background-color: $light-gray-1;
+    padding: 8px;
+
+    a {
+        padding: 8px 16px;
+        text-decoration: none;
+
+        &:hover {
+            background-color: $light-gray-2;
+        }
+    }
+}
