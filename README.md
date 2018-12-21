@@ -30,9 +30,23 @@ To learn more, visit:
 - Use `ember g route` to create `members` and `officers` routes
 - Use `{{link-to}}` helper to navigate between routes
 - Understand the purpose of `{{outlet}}`
-- Use a route's `model` to display data
+- Use a route's `model()` to display data
 - Use `ember install` to install addons (e.g. *ember-cli-sass*)
 
 To learn more, visit:
 - [Ember Route 1](https://guides.emberjs.com/release/routing/defining-your-routes/)
 - [Ember Route 2](https://guides.emberjs.com/release/routing/specifying-a-routes-model/)
+
+### #03 (Dec. 20th, 2018)
+- Use a `controller` to filter data from a route's `model()`
+- Define a `model`'s attributes
+- Understand the purpose of an `adapter` and a `serializer`
+- Use *Mirage* and *Faker.js* to create mock data
+- Use *ember-test-selectors` to write integration and acceptance tests
+
+To learn more, visit:
+- [Ember Controller](https://guides.emberjs.com/release/controllers/)
+- [Ember Model](https://guides.emberjs.com/release/models/defining-models/)
+- [Ember CLI Mirage](https://www.ember-cli-mirage.com/docs/v0.4.x/quickstart/)
+- [Faker.js](https://github.com/marak/Faker.js/)
+- [Ember Test Selectors](https://github.com/simplabs/ember-test-selectors)
